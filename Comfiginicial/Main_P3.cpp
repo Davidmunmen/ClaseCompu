@@ -1,6 +1,6 @@
 //David Muñoz Mendoza 
 // Número de Cuenta: 320168327
-// practica
+// practica 3
 //Fecha de entrega 4 de Septiembre de 2026
 // Lab de Conputación Grafica grupo 1
 #include<iostream>
@@ -272,7 +272,7 @@ int main() {
         model = glm::scale(model, glm::vec3(3.0f, 3.10f, 3.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
         glDrawArrays(GL_TRIANGLES, 0, 36);
-        //cubo 4 i
+        //cubo 4 d
         model = glm::mat4(1);
         model = glm::translate(model, glm::vec3(5.0f, -1.1f, -8.0f));
         model = glm::rotate(model, 4.0f, glm::vec3(2.0f, 3.0f, 3.0f));  // use to compare orthographic and perspective projection
@@ -302,4 +302,3 @@ int main() {
 
 
 }
-
