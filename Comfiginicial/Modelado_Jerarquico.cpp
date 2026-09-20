@@ -364,7 +364,7 @@ int main() {
 		//Dedo 5 pulgar articulacion1
 
 		model = glm::translate(modelTemp3, glm::vec3(0.2f, 0.2f, -0.8f));
-		model = glm::rotate(model, glm::radians(dedo4), glm::vec3(0.0f, 0.0f, 1.0f));
+		model = glm::rotate(model, glm::radians(dedo5), glm::vec3(0.0f, 0.0f, 1.0f));
 		modelTemp = model = glm::translate(model, glm::vec3(0.2f, -0.2f, 0.0f));
 		model = glm::scale(model, glm::vec3(0.4f, 0.2f, 0.22f));
 		color = glm::vec3(0.0f, 1.0f, 0.5f);
@@ -374,7 +374,7 @@ int main() {
 
 		//articulacion2
 		model = glm::translate(modelTemp, glm::vec3(0.1f, 0.0f, 0.0f));
-		model = glm::rotate(model, glm::radians(dedo4), glm::vec3(0.0f, 0.0f, 1.0f));
+		model = glm::rotate(model, glm::radians(dedo5), glm::vec3(0.0f, 0.0f, 1.0f));
 		modelTemp2 = modelTemp = model = glm::translate(model, glm::vec3(0.2f, 0.0f, 0.0f));
 		model = glm::scale(model, glm::vec3(0.4f, 0.2f, 0.22f));
 		color = glm::vec3(1.0f, 0.0f, 1.0f);
@@ -384,7 +384,7 @@ int main() {
 
 		//articulacion3
 		model = glm::translate(modelTemp, glm::vec3(0.1f, 0.0f, 0.0f));
-		model = glm::rotate(model, glm::radians(dedo4), glm::vec3(0.0f, 0.0f, 1.0f));
+		model = glm::rotate(model, glm::radians(dedo5), glm::vec3(0.0f, 0.0f, 1.0f));
 		modelTemp2 = modelTemp = model = glm::translate(model, glm::vec3(0.2f, 0.0f, 0.0f));
 		model = glm::scale(model, glm::vec3(0.4f, 0.2f, 0.22f));
 		color = glm::vec3(1.0f, 1.0f, 1.0f);
@@ -441,26 +441,34 @@ void Inputs(GLFWwindow* window) {
 		muneca += 0.18f;
 	if (glfwGetKey(window, GLFW_KEY_H) == GLFW_PRESS)
 		muneca -= 0.18f;
-	//anular
+	//indice
 	if (glfwGetKey(window, GLFW_KEY_U) == GLFW_PRESS)
 		dedo1 += 0.2f;
 	if (glfwGetKey(window, GLFW_KEY_J) == GLFW_PRESS)
 		dedo1 -= 0.2f;
+	//medio 
 	if (glfwGetKey(window, GLFW_KEY_I) == GLFW_PRESS)
 		dedo2 += 0.2f;
 	if (glfwGetKey(window, GLFW_KEY_K) == GLFW_PRESS)
 		dedo2 -= 0.2f;
+	//anular
 	if (glfwGetKey(window, GLFW_KEY_O) == GLFW_PRESS)
 		dedo3 += 0.2f;
 	
 	if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS)
 		dedo3 -= 0.2f;
-
+	//meñique
 	if (glfwGetKey(window, GLFW_KEY_M) == GLFW_PRESS)
 		dedo4 += 0.2f;
 
 	if (glfwGetKey(window, GLFW_KEY_N) == GLFW_PRESS)
 		dedo4 -= 0.2f;
+	//pulgar
+	if (glfwGetKey(window, GLFW_KEY_Z) == GLFW_PRESS)
+		dedo5 += 0.2f;
+
+	if (glfwGetKey(window, GLFW_KEY_X) == GLFW_PRESS)
+		dedo5 -= 0.2f;
 	dedo1 = glm::clamp(dedo1, 0.0f, 90.0f);
 	dedo2 = glm::clamp(dedo2, 0.0f, 90.0f);
 	dedo3 = glm::clamp(dedo3, 0.0f, 90.0f);
