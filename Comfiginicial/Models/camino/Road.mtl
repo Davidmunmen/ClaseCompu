@@ -1,0 +1,27 @@
+# Blender 4.5.2 LTS MTL File: 'Road.mtl'
+# www.blender.org
+
+newmtl 8K_Brand_new_road
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Brand_new_Road_Albedo.jpg
+map_Bump -bm 1.000000 Road_Normal.jpg
+
+newmtl grey_stone_path
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd grey_stone_path_diff.jpg
+map_Ns grey_stone_path_rough.png
+map_Bump -bm 1.000000 grey_stone_path_nor_gl.png
