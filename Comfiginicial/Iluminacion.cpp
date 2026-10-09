@@ -1,6 +1,6 @@
 //David Muñoz Mendoza 
 // Número de Cuenta: 320168327
-// previo practica 7
+// previo practica 8
 //Fecha de entrega 04 de Octubre de 2026
 // Lab de Conputación Grafica grupo 1
 
