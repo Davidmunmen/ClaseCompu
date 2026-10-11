@@ -1,7 +1,7 @@
 // David Muñoz Mendoza 
 // Número de Cuenta: 320168327
-// previo practica 8
-// Fecha de entrega 04 de Octubre de 2026
+//  practica 8
+// Fecha de entrega 09 de Octubre de 2026
 // Lab de Computación Gráfica grupo 1
 
 // Std. Includes
@@ -17,7 +17,7 @@
 #include "Shader.h"
 #include "Camera.h"
 #include "Model.h"
-
+//
 // GLM Mathematics
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -126,7 +126,7 @@ int main()
         glm::mat4 pivotlun = glm::mat4(1.0f);
         pivotlun = glm::rotate(pivotlun, glm::radians(rotLuna), glm::vec3(0.0f, 0.0f, 1.0f));
 
-        //sol
+        //sol(neptuno)
         glm::mat4 modelSolPos = pivot;
         modelSolPos = glm::translate(modelSolPos, glm::vec3(15.0f, 2.0f, 0.0f));
         glm::vec3 currentLightPos = glm::vec3(modelSolPos[3]);
@@ -308,7 +308,7 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
             keys[key] = false;
         }
     }
-
+    //sol (neptuno)
     if (keys[GLFW_KEY_O])
     {
         rot += 50.0f * deltaTime; // Rotación hacia la derecha
@@ -318,6 +318,7 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
     {
         rot -= 50.0f * deltaTime; // Rotación hacia la izquierda
     }
+    //luna
     if (keys[GLFW_KEY_I])
     {
         rotLuna += 50.0f * deltaTime;
