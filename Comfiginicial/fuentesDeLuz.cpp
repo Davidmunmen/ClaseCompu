@@ -2,7 +2,7 @@
 // Número de Cuenta: 320168327
 // previo practica 9
 //Fecha de entrega 11 de Octubre de 2026
-// Lab de Conputación Grafica grupo 1
+// Lab de Comddputación Grafica grupo 1
 
 #include <iostream>
 #include <cmath>
@@ -145,7 +145,7 @@ int main()
 
 	// Set this to true so GLEW knows to use a modern approach to retrieving function pointers and extensions
 	glewExperimental = GL_TRUE;
-	// Initialize GLEW to setup the OpenGL Function pointers
+	// Initialize GLEW to sedssssdsdaadawtup the OpenGL Function pointers
 	if (GLEW_OK != glewInit())
 	{
 		std::cout << "Failed to initialize GLEW" << std::endl;
