@@ -1,7 +1,7 @@
 // David Muñoz Mendoza 
 // Número de Cuenta: 320168327
 //  practica 9
-// Fecha de entrega 09 de Octubre de 2026
+// Fecha de entrega 16 de Octubre de 2026
 // Lab de Computación Gráfica grupo 1
 
 // Std. Includes
@@ -452,6 +452,8 @@ void DoMovement()
     {
         camera.ProcessKeyboard(RIGHT, deltaTime);
     }
+    //primer bloque
+    //mov en x
     if (keys[GLFW_KEY_R])
     {
         pointLightPositions[2].x += 0.01f;
@@ -465,7 +467,7 @@ void DoMovement()
     {
         pointLightPositions[2].y += 0.01f;
     }
-
+    //mov en y
     if (keys[GLFW_KEY_G])
     {
         pointLightPositions[2].y -= 0.01f;
@@ -474,11 +476,12 @@ void DoMovement()
     {
         pointLightPositions[2].z -= 0.1f;
     }
+    //mov en z
     if (keys[GLFW_KEY_V])
     {
         pointLightPositions[2].z += 0.01f;
     }
-    //SEGUNDO BLOQUE
+    //SEGUNDO BLOQUE mov en x
     if (keys[GLFW_KEY_Y])
     {
         pointLightPositions[1].x += 0.01f;
@@ -486,13 +489,13 @@ void DoMovement()
     if (keys[GLFW_KEY_H])
     {
         pointLightPositions[1].x -= 0.01f;
-    }
+    }//mov en y
 
     if (keys[GLFW_KEY_U])
     {
         pointLightPositions[1].y += 0.01f;
     }
-
+    //mov en z
     if (keys[GLFW_KEY_J])
     {
         pointLightPositions[1].y -= 0.01f;
